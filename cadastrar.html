@@ -1,234 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Professor de Boa</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
-        <!-- Icons  -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-        
-    </head>
-    <body>
-        <div class="d-flex" id="wrapper">
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                    <div class="container-fluid">
-                        <h1 class="mt-4">Professor de Boa</h1>
-                        <!-- <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button> -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item active"><a class="nav-link" href="cadastrar.html">Link</a></li>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+<html>
 
-                <!-- Page content-->
-                <!-- <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyvb3TwDXhyWjoiXAlzuAV8WI9LeOaDjZl8abebdfHHdHbJ7JE/exec">                     -->
-                <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyvb3TwDXhyWjoiXAlzuAV8WI9LeOaDjZl8abebdfHHdHbJ7JE/exec">
-                    <div class="form-group">
-                    <label for="email">E-mail</label> 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        </div> 
-                        <input id="email" name="email" placeholder="E-mail" type="text" class="form-control" aria-describedby="emailHelpBlock" required="required">
-                    </div> 
-                    <span id="emailHelpBlock" class="form-text text-muted">Seu e-mail será cifrado e ninguém saberá quem é você.</span>
+  <head>
+    <meta charset="UTF-8">
+    <title>Professor de Boa</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css ">
+    <!-- Icons  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Plugins -->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarsExample10" aria-controls="navbarsExample10"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center"
+          id="navbarsExample10">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastrar.html">Cadastrar<span
+                class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="pb-5 pt-5">
+      <div class="container">
+        <h2 class=" text-center fw-bold">Want to work with us?</h2>
+        <p class="lead text-center">Your project is very important to us.</p>
+        <div class="row">
+          <div class="col-lg-6 text-center col-md-8 ms-auto me-auto">
+            <div class="input-group input-lg">
+              <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyvb3TwDXhyWjoiXAlzuAV8WI9LeOaDjZl8abebdfHHdHbJ7JE/exec">
+                <!-- E-mail -->
+                <div class="input-group input-lg mt-2">
+                  <label for="email" class="text-muted">E-mail</label> 
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                    <input id="email" name="email" placeholder="E-mail" type="text" class="form-control" aria-describedby="emailHelpBlock" required="required">
+                  </div>
+                  <span id="emailHelpBlock" class="form-text text-muted">Seu e-mail será cifrado e ninguém saberá quem é você!</span>
+                </div>
+
+                <!-- Professor -->
+                <div class="input-group input-lg mt-4">
+                  <label for="professor" class="text-muted">Professor</label>  
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-user-md"></i></span>
+                    <input id="professor" name="professor" placeholder="Nome do professor" type="text" required="required" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Universidade -->
+                <div class="input-group input-lg mt-4">
+                  <label for="universidade" class="text-muted">Universidade</label>  
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-university"></i></span>
+                    <input id="universidade" name="universidade" placeholder="Universidade" type="text" required="required" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Campus -->
+                <div class="input-group input-lg mt-4">
+                  <label for="campus" class="text-muted">Campus</label>  
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-map-marker"></i></span>
+                    <input id="campus" name="campus" placeholder="Campus" type="text" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Disciplina -->
+                <div class="input-group input-lg mt-4">
+                  <label for="disciplina" class="text-muted">Disciplina</label>  
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-pen-square"></i></span>
+                    <input id="disciplina" name="disciplina" placeholder="Disciplina" type="text" required="required" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Código da disciplina -->
+                <div class="input-group input-lg mt-4">
+                  <label for="codigo-disciplina" class="text-muted">Código da disciplina</label>  
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-pen-square"></i></span>
+                    <input id="codigo-disciplina" name="codigo-disciplina" placeholder="Código da disciplina" type="text" required="required" class="form-control">
+                  </div>
+                </div>
+                
+                <!-- Período -->
+                <div class="input-group input-lg mt-4">
+                  <label for="periodo" class="text-muted">Período</label>  
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                    <input id="periodo" name="periodo" placeholder="Período (e.x.: 1s2021)" type="text" required="required" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Tipo de avaliação -->
+                <div class="input-group input-lg mt-4">
+                    <label class="text-muted">Tipo de Avaliação</label>
+                    <div class="input-group input-lg mt-3">
+                    <div class="form-check form-check-inline">
+                      <input name="tipo-avaliacao" id="tipo-avaliacao_0" type="checkbox" class="form-check-input" value="prova"> 
+                      <label for="tipo-avaliacao_0" class="form-check-label">Prova</label>
                     </div>
-                    <div class="form-group">
-                    <label for="professor">Professor</label> 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fa fa-user-md"></i>
-                        </div>
-                        </div> 
-                        <input id="professor" name="professor" placeholder="Nome do professor" type="text" required="required" class="form-control">
+                    <div class="form-check form-check-inline">
+                      <input name="tipo-avaliacao" id="tipo-avaliacao_1" type="checkbox" class="form-check-input" value="tarefas"> 
+                      <label for="tipo-avaliacao_1" class="form-check-label">Tarefas</label>
                     </div>
+                    <div class="form-check form-check-inline">
+                      <input name="tipo-avaliacao" id="tipo-avaliacao_2" type="checkbox" class="form-check-input" value="trabalho-curto"> 
+                      <label for="tipo-avaliacao_2" class="form-check-label">Trabalho curto</label>
                     </div>
-                    <div class="form-group">
-                    <label for="universidade">Universidade</label> 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fa fa-university"></i>
-                        </div>
-                        </div> 
-                        <input id="universidade" name="universidade" placeholder="Universidade" type="text" required="required" class="form-control">
+                    <div class="form-check form-check-inline">
+                      <input name="tipo-avaliacao" id="tipo-avaliacao_3" type="checkbox" class="form-check-input" value="trabalho-longo"> 
+                      <label for="tipo-avaliacao_3" class="form-check-label">Trabalho longo</label>
                     </div>
+                    <div class="form-check form-check-inline">
+                      <input name="tipo-avaliacao" id="tipo-avaliacao_4" type="checkbox" class="form-check-input" value="grupo"> 
+                      <label for="tipo-avaliacao_4" class="form-check-label">Atividades em grupo</label>
                     </div>
-                    <div class="form-group">
-                    <label for="campus">Campus</label> 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fas fa-map-marker"></i>
-                        </div>
-                        </div> 
-                        <input id="campus" name="campus" placeholder="Campus da universiade" type="text" class="form-control">
+                    <div class="form-check form-check-inline">
+                      <input name="tipo-avaliacao" id="tipo-avaliacao_5" type="checkbox" class="form-check-input" value="outros"> 
+                      <label for="tipo-avaliacao_5" class="form-check-label">Outros</label>
                     </div>
+                  </div>
+                </div>
+
+                <!-- Didatica -->
+                <div class="input-group input-lg mt-4">
+                  <label for="didatica" class="text-muted">Didática</label> 
+                  <div class="input-group input-lg mt-2">
+                      <select id="didatica" name="didatica" class="form-select" aria-describedby="didaticaHelpBlock" required="required">
+                      <option value="1">Péssima</option>
+                      <option value="2">Ruim</option>
+                      <option value="3">Regular</option>
+                      <option value="4">Boa</option>
+                      <option value="5">Excelente</option>
+                      </select> 
+                  </div>
+                  <span id="didaticaHelpBlock" class="form-text text-muted">O professor apresenta o conteúdo com clareza?</span>
+                </div>
+
+                <!-- Domínio -->
+                <div class="input-group input-lg mt-4">
+                  <label for="dominio" class="text-muted">Domínio</label> 
+                  <div class="input-group input-lg mt-2">
+                      <select id="dominio" name="dominio" class="form-select" aria-describedby="dominioHelpBlock" required="required">
+                      <option value="1">Não entende nada</option>
+                      <option value="2">Entende um pouco</option>
+                      <option value="3">Entende o suficiente</option>
+                      <option value="4">Entende bastante</option>
+                      <option value="5">Domina o assunto perfeitamente</option>
+                      </select> 
                     </div>
-                    <div class="form-group">
-                    <label for="disciplina">Disciplina</label> 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fas fa-pen-square"></i>
-                        </div>
-                        </div> 
-                        <input id="disciplina" name="disciplina" placeholder="Nome da disciplina" type="text" class="form-control">
+                    <span id="dominioHelpBlock" class="form-text text-muted">O professor demonstra dominio sobre o tema?</span>
+                </div>
+
+                <!-- Availiação -->
+                <div class="input-group input-lg mt-4">
+                  <label for="avaliacao" class="text-muted">Avaliação</label> 
+                  <div class="input-group input-lg mt-2">
+                      <select id="avaliacao" name="avaliacao" class="form-select" aria-describedby="avaliacaoHelpBlock" required="required">
+                      <option value="1">Super de boa</option>
+                      <option value="2">Cobra um pouco</option>
+                      <option value="3">Cobra o necessário</option>
+                      <option value="4">Cobra bastante</option>
+                      <option value="5">Cobra em excesso</option>
+                      </select> 
                     </div>
-                    </div>
-                    <div class="form-group">
-                    <label for="codigo-disciplina">Código da Disciplina</label> 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fas fa-barcode"></i>
-                        </div>
-                        </div> 
-                        <input id="codigo-disciplina" name="codigo-disciplina" placeholder="Código da disciplina" type="text" class="form-control" required="required">
-                    </div>
-                    </div>
-                    <div class="form-group">
-                    <label for="periodo">Periodo</label> 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        </div> 
-                        <input id="periodo" name="periodo" placeholder="Periodo que a disciplina foi cursada" type="text" class="form-control" required="required">
-                    </div>
-                    </div>
-                    <div class="form-group">
-                    <label for="nota">Nota</label> 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fa fa-star"></i>
-                        </div>
-                        </div> 
-                        <input id="nota" name="nota" placeholder="Nota que você tirou na disciplina" type="text" class="form-control" required="required">
-                    </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Tipo de Avaliação</label> 
-                        <div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="tipo-avaliacao" id="tipo-avaliacao_0" type="checkbox" class="custom-control-input" value="prova"> 
-                            <label for="tipo-avaliacao_0" class="custom-control-label">Prova</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="tipo-avaliacao" id="tipo-avaliacao_1" type="checkbox" class="custom-control-input" value="tarefas"> 
-                            <label for="tipo-avaliacao_1" class="custom-control-label">Tarefas</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="tipo-avaliacao" id="tipo-avaliacao_2" type="checkbox" class="custom-control-input" value="trabalho-curto"> 
-                            <label for="tipo-avaliacao_2" class="custom-control-label">Trabalho curto</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="tipo-avaliacao" id="tipo-avaliacao_3" type="checkbox" class="custom-control-input" value="trabalho-longo"> 
-                            <label for="tipo-avaliacao_3" class="custom-control-label">Trabalho longo</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="tipo-avaliacao" id="tipo-avaliacao_4" type="checkbox" class="custom-control-input" value="grupo"> 
-                            <label for="tipo-avaliacao_4" class="custom-control-label">Atividades em grupo</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="tipo-avaliacao" id="tipo-avaliacao_5" type="checkbox" class="custom-control-input" value="outros"> 
-                            <label for="tipo-avaliacao_5" class="custom-control-label">Outros</label>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="form-group">
-                    <label for="didatica">Didática</label> 
-                    <div>
-                        <select id="didatica" name="didatica" class="custom-select" aria-describedby="didaticaHelpBlock" required="required">
+                    <span id="avaliacaoHelpBlock" class="form-text text-muted">O nível de exigência da disciplina (cobrança) é coerente?</span>
+                </div>
+
+                <!-- Dificuldade -->
+                <div class="input-group input-lg mt-4">
+                  <label for="dificuldade" class="text-muted">Dificuldade</label> 
+                  <div class="input-group input-lg mt-2">
+                      <select id="dificuldade" name="dificuldade" aria-describedby="dificuldadeHelpBlock" required="required" class="form-select">
+                      <option value="1">Super fácil</option>
+                      <option value="2">Fácil</option>
+                      <option value="3">Médio</option>
+                      <option value="4">Difícil</option>
+                      <option value="5">Impossível</option>
+                    </select> 
+                  </div>
+                  <span id="dificuldadeHelpBlock" class="form-text text-muted">Como você avalia a dificuldade da disciplina?</span>
+                </div>
+
+                <!-- Nota -->
+                <div class="input-group input-lg mt-4">
+                  <label for="nota" class="text-muted">Nota</label> 
+                  <div class="input-group input-lg mt-2">
+                      <select id="nota" name="nota" class="form-select" aria-describedby="notaHelpBlock" required="required">
                         <option value="1">Péssima</option>
                         <option value="2">Ruim</option>
                         <option value="3">Regular</option>
                         <option value="4">Boa</option>
                         <option value="5">Excelente</option>
-                        </select> 
-                        <span id="didaticaHelpBlock" class="form-text text-muted">O professor apresenta o conteúdo com clareza?</span>
+                      </select> 
                     </div>
-                    </div>
-                    <div class="form-group">
-                    <label for="dominio">Domínio</label> 
-                    <div>
-                        <select id="dominio" name="dominio" class="custom-select" aria-describedby="dominioHelpBlock" required="required">
-                        <option value="1">Não entende nada</option>
-                        <option value="2">Entende um pouco</option>
-                        <option value="3">Entende o suficiente</option>
-                        <option value="4">Entende bastante</option>
-                        <option value="">Domina o assunto perfeitamente</option>
-                        </select> 
-                        <span id="dominioHelpBlock" class="form-text text-muted">O professor demonstra dominio sobre o tema?</span>
-                    </div>
-                    </div>
-                    <div class="form-group">
-                    <label for="avaliacao">Avaliação</label> 
-                    <div>
-                        <select id="avaliacao" name="avaliacao" class="custom-select" aria-describedby="avaliacaoHelpBlock" required="required">
-                        <option value="1">Super de boa</option>
-                        <option value="2">Cobra um pouco</option>
-                        <option value="3">Cobra o necessário</option>
-                        <option value="4">Cobra bastante</option>
-                        <option value="5">Cobra em excesso</option>
-                        </select> 
-                        <span id="avaliacaoHelpBlock" class="form-text text-muted">O nível de exigência da disciplina (cobrança) é coerente?</span>
-                    </div>
-                    </div>
-                    <div class="form-group">
-                    <label for="dificuldade">Dificuldade</label> 
-                    <div>
-                        <select id="dificuldade" name="dificuldade" aria-describedby="dificuldadeHelpBlock" required="required" class="custom-select">
-                        <option value="1">Super fácil</option>
-                        <option value="2">Fácil</option>
-                        <option value="3">Médio</option>
-                        <option value="4">DIfícil</option>
-                        <option value="5">Impossível</option>
-                        </select> 
-                        <span id="dificuldadeHelpBlock" class="form-text text-muted">Como você avalia a dificuldade da disciplina?</span>
-                    </div>
-                    </div> 
-                    <div class="form-group">
-                        <label for="comentarios">Comentários adicionais</label> 
-                        <textarea id="comentarios" name="comentarios" cols="40" rows="3" class="form-control"></textarea>
-                      </div> 
-                    <div class="form-group">
-                        <button name="submit" type="submit" class="btn btn-primary">
-                            <i class="far fa-paper-plane"></i>&nbsp;Enviar
-                        </button>
-                    </div>
+                    <span id="notaHelpBlock" class="form-text text-muted">Qual foi a sua nota final na disciplina?</span>
+                </div>
 
-                    <!-- Customise the Thankyou Message People See when they submit the form: -->
-                    <div class="thankyou_message" style="display:none;">
-                        <h2><em>Resposta submetida com sucesso!</em></h2>
-                    </div>
-                </form>
+                <!-- Comentários -->
+                <div class="textarea-container mt-4">
+                  <label for="comentarios" class="text-muted">Comentários adicionais</label> 
+                  <textarea class="form-control" id="comentarios" name="comentarios" rows="3" cols="80"
+                    placeholder="Digite aqui comentários adicionais..."
+                    style="margin-top: 0px; margin-bottom: 0px; height: 246px;"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="send-button mt-5">
+                  <button name="submit" type="submit" class="btn btn-primary">
+                    <i class="far fa-paper-plane"></i>&nbsp;Enviar
+                  </button>
+                </div>
+
+                <div class="thankyou_message" style="display:none;">
+                  <h2><em>Resposta submetida com sucesso!</em></h2>
+                </div>
+              </form>
+
             </div>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script data-cfasync="false" src="js/form-submission-handler.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </section>
+    <section class="">
+      <footer class="pt-4 pb-4 ">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <p>© 2021 Bootstraptor. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+      crossorigin="anonymous"></script>
+    <script data-cfasync="false" src="js/form-submission-handler.js"></script>
+  </body>
+
 </html>
