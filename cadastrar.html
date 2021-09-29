@@ -10,8 +10,10 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
         <!-- Icons  -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        
     </head>
     <body>
         <div class="d-flex" id="wrapper">
@@ -34,143 +36,188 @@
                 </nav>
 
                 <!-- Page content-->
+                <!-- <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyvb3TwDXhyWjoiXAlzuAV8WI9LeOaDjZl8abebdfHHdHbJ7JE/exec">                     -->
                 <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyvb3TwDXhyWjoiXAlzuAV8WI9LeOaDjZl8abebdfHHdHbJ7JE/exec">
-                  <!-- change the form action to your script url -->
-              
-                    <div class="form-group row">
-                        <label for="input-professor" class="col-sm-2 col-form-label">Professor</label>
-                        <div class="col-sm-10">
-                            <input id="input-professor" name="professor" type="text" class="form-control" placeholder="Nome do Professor"/>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="input-universidade" class="col-sm-2 col-form-label">Universidade</label>
-                        <div class="col-sm-10">
-                            <input id="input-universidade" name="universidade" type="text" class="form-control" placeholder="Universidade"/>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="input-campus" class="col-sm-2 col-form-label">Campus</label>
-                        <div class="col-sm-10">
-                            <input id="input-campus" name="campus" type="text" class="form-control" placeholder="Campus"/>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="input-disciplina" class="col-sm-2 col-form-label">Disciplina</label>
-                        <div class="col-sm-10">
-                            <input id="input-disciplina" name="disciplina" type="text" class="form-control" placeholder="Disciplina"/>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="input-codigo" class="col-sm-2 col-form-label">Código da Disciplina</label>
-                        <div class="col-sm-10">
-                            <input id="input-codigo" name="codigo" type="text" class="form-control" placeholder="Código da disciplina"/>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="input-periodo" class="col-sm-2 col-form-label">Período</label>
-                        <div class="col-sm-10">
-                            <input id="input-periodo" name="periodo" type="text" class="form-control" placeholder="Período (ex. 1s2020)"/>
-                        </div>
-                    </div>
-
-                    <fieldset class="form-group">
-                        <label class="col-sm-2 col-form-label">Didática: </label>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-didatica-1" name="didatica" type="radio" class="form-check-input" value="1">
-                            <label class="form-check-label" for="radio-didatica-1">Ruim</label>
-                            <i class="far fa-sad-cry"></i>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-didatica-2" name="didatica" type="radio" class="form-check-input" value="2">
-                            <label class="form-check-label" for="radio-didatica-2">Boa</label>
-                            <i class="far fa-smile"></i>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-didatica-3" name="didatica" type="radio" class="form-check-input" value="3">
-                            <label class="form-check-label" for="radio-didatica-3">Ótima</label>
-                            <i class="far fa-grin-stars"></i>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="form-group">
-                        <label class="col-sm-2 col-form-label">Cobrança: </label>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-cobranca-1" name="cobranca" type="radio" class="form-check-input" value="1">
-                            <label class="form-check-label" for="radio-cobranca-1">Baixa</label>
-                            <i class="far fa-sad-cry"></i>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-cobranca-2" name="cobranca" type="radio" class="form-check-input" value="2">
-                            <label class="form-check-label" for="radio-cobranca-2">Média</label>
-                            <i class="far fa-smile"></i>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-cobranca-3" name="cobranca" type="radio" class="form-check-input" value="3">
-                            <label class="form-check-label" for="radio-cobranca-3">Alta</label>
-                            <i class="far fa-grin-stars"></i>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="form-group">
-                        <label class="col-sm-2 col-form-label">Dificuldade: </label>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-dificuldade-1" name="dificuldade" type="radio" class="form-check-input" value="1">
-                            <label class="form-check-label" for="radio-dificuldade-1">Baixa</label>
-                            <i class="far fa-sad-cry"></i>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-dificuldade-2" name="dificuldade" type="radio" class="form-check-input" value="2">
-                            <label class="form-check-label" for="radio-dificuldade-2">Média</label>
-                            <i class="far fa-smile"></i>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-dificuldade-3" name="dificuldade" type="radio" class="form-check-input" value="3">
-                            <label class="form-check-label" for="radio-dificuldade-3">Alta</label>
-                            <i class="far fa-grin-stars"></i>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="form-group">
-                        <label class="col-sm-2 col-form-label">Aprendizado: </label>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-aprendizado-1" name="aprendizado" type="radio" class="form-check-input" value="1">
-                            <label class="form-check-label" for="radio-aprendizado-1">Não aprendi nada</label>
-                            <i class="far fa-sad-cry"></i>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-aprendizado-2" name="aprendizado" type="radio" class="form-check-input" value="2">
-                            <label class="form-check-label" for="radio-aprendizado-2">Entendi algo</label>
-                            <i class="far fa-smile"></i>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="radio-aprendizado-3" name="aprendizado" type="radio" class="form-check-input" value="3">
-                            <label class="form-check-label" for="radio-aprendizado-3">Aprendi com perfeição</label>
-                            <i class="far fa-grin-stars"></i>
-                        </div>
-                    </fieldset>
-
-
                     <div class="form-group">
-                        <label for="input-comentarios">Comentários adicionais</label>
-                        <textarea id="input-comentarios" name="comentarios" class="form-control" rows="3" placeholder="Digite aqui comentátios relevantes"></textarea>
+                    <label for="email">E-mail</label> 
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        </div> 
+                        <input id="email" name="email" placeholder="E-mail" type="text" class="form-control" aria-describedby="emailHelpBlock" required="required">
+                    </div> 
+                    <span id="emailHelpBlock" class="form-text text-muted">Seu e-mail será cifrado e ninguém saberá quem é você.</span>
                     </div>
+                    <div class="form-group">
+                    <label for="professor">Professor</label> 
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-user-md"></i>
+                        </div>
+                        </div> 
+                        <input id="professor" name="professor" placeholder="Nome do professor" type="text" required="required" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="Universidade">Universidade</label> 
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-university"></i>
+                        </div>
+                        </div> 
+                        <input id="Universidade" name="Universidade" placeholder="Universidade" type="text" required="required" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="campus">Campus</label> 
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fas fa-map-marker"></i>
+                        </div>
+                        </div> 
+                        <input id="campus" name="campus" placeholder="Campus da universiade" type="text" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="disciplina">Disciplina</label> 
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fas fa-pen-square"></i>
+                        </div>
+                        </div> 
+                        <input id="disciplina" name="disciplina" placeholder="Nome da disciplina" type="text" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="codigo-disciplina">Código da Disciplina</label> 
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fas fa-barcode"></i>
+                        </div>
+                        </div> 
+                        <input id="codigo-disciplina" name="codigo-disciplina" placeholder="Código da disciplina" type="text" class="form-control" required="required">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="periodo">Periodo</label> 
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        </div> 
+                        <input id="periodo" name="periodo" placeholder="Periodo que a disciplina foi cursada" type="text" class="form-control" required="required">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="nota">Nota</label> 
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        </div> 
+                        <input id="nota" name="nota" placeholder="Nota que você tirou na disciplina" type="text" class="form-control" required="required">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Avaliação</label> 
+                        <div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input name="tipo-avaliacao" id="tipo-avaliacao_0" type="checkbox" class="custom-control-input" value="prova"> 
+                            <label for="tipo-avaliacao_0" class="custom-control-label">Prova</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input name="tipo-avaliacao" id="tipo-avaliacao_1" type="checkbox" class="custom-control-input" value="tarefas"> 
+                            <label for="tipo-avaliacao_1" class="custom-control-label">Tarefas</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input name="tipo-avaliacao" id="tipo-avaliacao_2" type="checkbox" class="custom-control-input" value="trabalho-curto"> 
+                            <label for="tipo-avaliacao_2" class="custom-control-label">Trabalho curto</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input name="tipo-avaliacao" id="tipo-avaliacao_3" type="checkbox" class="custom-control-input" value="trabalho-longo"> 
+                            <label for="tipo-avaliacao_3" class="custom-control-label">Trabalho longo</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input name="tipo-avaliacao" id="tipo-avaliacao_4" type="checkbox" class="custom-control-input" value="grupo"> 
+                            <label for="tipo-avaliacao_4" class="custom-control-label">Atividades em grupo</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input name="tipo-avaliacao" id="tipo-avaliacao_5" type="checkbox" class="custom-control-input" value="outros"> 
+                            <label for="tipo-avaliacao_5" class="custom-control-label">Outros</label>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="form-group">
+                    <label for="didatica">Didática</label> 
+                    <div>
+                        <select id="didatica" name="didatica" class="custom-select" aria-describedby="didaticaHelpBlock" required="required">
+                        <option value="1">Péssima</option>
+                        <option value="2">Ruim</option>
+                        <option value="3">Regular</option>
+                        <option value="4">Boa</option>
+                        <option value="5">Excelente</option>
+                        </select> 
+                        <span id="didaticaHelpBlock" class="form-text text-muted">O professor apresenta o conteúdo com clareza?</span>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="dominio">Domínio</label> 
+                    <div>
+                        <select id="dominio" name="dominio" class="custom-select" aria-describedby="dominioHelpBlock" required="required">
+                        <option value="1">Não entende nada</option>
+                        <option value="2">Entende um pouco</option>
+                        <option value="3">Entende o suficiente</option>
+                        <option value="4">Entende bastante</option>
+                        <option value="">Domina o assunto perfeitamente</option>
+                        </select> 
+                        <span id="dominioHelpBlock" class="form-text text-muted">O professor demonstra dominio sobre o tema?</span>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="avaliacao">Avaliação</label> 
+                    <div>
+                        <select id="avaliacao" name="avaliacao" class="custom-select" aria-describedby="avaliacaoHelpBlock" required="required">
+                        <option value="1">Super de boa</option>
+                        <option value="2">Cobra um pouco</option>
+                        <option value="3">Cobra o necessário</option>
+                        <option value="4">Cobra bastante</option>
+                        <option value="5">Cobra em excesso</option>
+                        </select> 
+                        <span id="avaliacaoHelpBlock" class="form-text text-muted">O nível de exigência da disciplina (cobrança) é coerente?</span>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="dificuldade">Dificuldade</label> 
+                    <div>
+                        <select id="dificuldade" name="dificuldade" aria-describedby="dificuldadeHelpBlock" required="required" class="custom-select">
+                        <option value="1">Super fácil</option>
+                        <option value="2">Fácil</option>
+                        <option value="3">Médio</option>
+                        <option value="4">DIfícil</option>
+                        <option value="5">Impossível</option>
+                        </select> 
+                        <span id="dificuldadeHelpBlock" class="form-text text-muted">Como você avalia a dificuldade da disciplina?</span>
+                    </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="comentarios">Comentários adicionais</label> 
+                        <textarea id="comentarios" name="comentarios" cols="40" rows="3" class="form-control"></textarea>
+                      </div> 
+                    <div class="form-group">
 
-              
-                    <button class="button-success pure-button button-xlarge form-control">
-                      <i class="far fa-paper-plane"></i>&nbsp;Enviar
+                    <button name="submit" type="submit" class="button-success pure-button button-xlarge form-control">
+                        <i class="far fa-paper-plane"></i>&nbsp;Enviar
                     </button>
-              
-                  <!-- Customise the Thankyou Message People See when they submit the form: -->
-                  <div class="thankyou_message" style="display:none;">
-                    <h2><em>Obrigado!</em></h2>
-                  </div>
-              
+                    </div>
                 </form>
             </div>
         </div>
